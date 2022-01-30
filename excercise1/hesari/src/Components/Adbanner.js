@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Adbanner() {
-  return <div>
+  return <div className="Adbanner">
+    <div className="mainos">Päivän Kura: Kärnäri-Petri laukoo taas ohi. Pub Kipparin joukkue Pubi-liigan hännillä</div>
+    <div className="mainos">Päivän Kura: Turkua ei vieläkään tunnusteta omaksi valtiokseen</div>
+    <div className="lol">LOL: Nikosta ei tule React ohjelmoijaa </div>
+
       
   </div>;
 }

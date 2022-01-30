@@ -1,40 +1,96 @@
 .Header {
     color: white;
-    font-family: "Helvetica Neue";
     background-color: blue;
+   
+}
+.innerHeader {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    
+
+}
+.innerHeader > .navbtn {
+    font-size: 20px;
+}
+
+.hesari {
+    display: flex;
+    justify-content:space-evenly;
+    font-size:40px;
+    font-family:Helvetica;
+}
+
+
+
+.Adbanner {
+    margin-left: auto;
+    margin-right: auto;
+    font-size:20px;
+    color:white;
+    margin-right:200px;
+    margin-left:200px;
+    margin-top:30px;
+    
+}
+
+.Adbanner > .mainos{
+    display:flex;
+    justify-content:left;
+    align-content: flex-start;
+    background-color: rgb(39, 75, 129);
+    border: solid 1px ;
+    height:50px;
+  
+}
+
+.Adbanner > .lol {
+    display:flex;
+    justify-content:left;
+    background-color:rgb(53, 126, 155);
+    border: solid 1px ;
+    height:50px;
+}
+
+.maincontent {
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    
+
+}
+
+.maincontent > .mainPage {
+
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+   
+
+
+}
+.mainPage > .mainHeadline {
+    width:80%;
     font-size: 60px;
-}
-
-.Leftheader {
-display: flex;
-
-
-
-}
-
-.Rightheader {
-display: flex;
-
-    
-}
-
-.Menu {
-
-    
 
 }
 
 
-.navbtn {
-    font-size: 40px;
-    padding-left: 15px;
-    
-    
+.mainPage > .sideBar {
+    width:20%;
+    font-size: 30px;
+}
 
+.sideBar > .uutisTaulukko {
+    padding: 30px;
+    border-bottom: solid 1px;
+    
     
 }
 
-.Pullmenu {
-    font-size: 40px;
+.sideBar > .shit {
+    padding: 30px;
+    border-bottom: solid 1px;
+
 }
 
