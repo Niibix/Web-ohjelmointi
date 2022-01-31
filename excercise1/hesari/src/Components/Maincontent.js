@@ -12,19 +12,25 @@ export default function Maincontent(props) {
             height="600" width="1500">
             </img>
             </div>
-            
+
             </div>
 
             <div className="sideBar">
-              <div className="uutisTaulukko">Luetuimmat</div>
+              <div className="Vittu">
+                <div className="Luetuin"><h1>Luetuimmat</h1></div>
+              
              {
-                props.shit.map((item)=>{
-                  return  <div className='shit' key={item}> {item}
-                  </div>
+                props.sideNews.map((item) =>{
+                  return <div className='numero' key={item}> {item.nmb}
+                  <div className="uutinen" key={item}> {item.news}</div> 
+                 </div>
+                  
+                  
                 })}
 
-
+             
 
             </div>
+        </div>
         </div>
         </div>;}
