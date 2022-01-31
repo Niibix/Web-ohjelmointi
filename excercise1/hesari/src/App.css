@@ -98,15 +98,16 @@
 .Vittu > .numero {
     font-size: 30px;
     Display: flex;
-    border-bottom: 1px solid;
-    padding-top:20px;
-    
    
-    
+    padding-top:20px;
+    color:blue;
+       
 }
 
-.Vittu > .uutinen {
-    margin-left: 20px;
+.numero > .uutinen {
+    margin-left: 10px;
+    color:white;
+    border-bottom: 1px solid;
 }
 
 .Vittu > .Luetuin {
