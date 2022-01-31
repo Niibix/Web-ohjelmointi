@@ -1,3 +1,7 @@
+.App {
+    background-color: gray;
+    position: absolute;
+}
 .Header {
     color: white;
     background-color: blue;
@@ -12,6 +16,7 @@
 }
 .innerHeader > .navbtn {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .hesari {
@@ -31,6 +36,7 @@
     margin-right:200px;
     margin-left:200px;
     margin-top:30px;
+    cursor: pointer;
     
 }
 
@@ -72,6 +78,7 @@
 .mainPage > .mainHeadline {
     width:80%;
     font-size: 60px;
+    cursor: pointer;
 
 }
 
@@ -79,18 +86,32 @@
 .mainPage > .sideBar {
     width:20%;
     font-size: 30px;
+    cursor: pointer;
+   
 }
 
-.sideBar > .uutisTaulukko {
-    padding: 30px;
-    border-bottom: solid 1px;
+.sideBar > .Vittu {
+    padding-top: 30px;
     
+}
+
+.Vittu > .numero {
+    font-size: 30px;
+    Display: flex;
+    border-bottom: 1px solid;
+    padding-top:20px;
+    
+   
     
 }
 
-.sideBar > .shit {
-    padding: 30px;
-    border-bottom: solid 1px;
-
+.Vittu > .uutinen {
+    margin-left: 20px;
 }
+
+.Vittu > .Luetuin {
+    border-bottom: 1px solid
+}
+
+
 
