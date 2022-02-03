@@ -1,0 +1,15 @@
+.Item > .headLine {
+  font-size:40px;
+
+}
+
+ .Item > .headLine {
+   background-color:yellow;
+ }
+
+.sisal{
+display: flex;
+padding-top: 20px;
+margin-top: 2px;
+background-color:red;
+ }
