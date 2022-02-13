@@ -6,18 +6,18 @@ const { v4: uuidv4 } = require('uuid');
 const products = [
     {   
         "id": uuidv4(),
-        "name": "Piisamin kestävä laituri",
-        "manufacturer": "Tmi Aake",
+        "name": "Piisamin_kestävä_laituri",
+        "manufacturer": "Tmi_Aake",
         "category": "Laitur",
-        "description": "Maailman kahdeksas ihme", 
-        "price":"open check"
+        "description": "Maailman_kahdeksas_ihme", 
+        "price":"open_check"
     },
     {   
         "id":uuidv4(),
-        "name": "Sepon viiksi vaha",
-        "manufacturer": "Suppo Taalasmaa Inc.",
-        "category": "Pensseli rasva",
-        "description": "Muhkeat viikset", 
+        "name": "Sepon",
+        "manufacturer": "Suppo_Taalasmaa_Inc.",
+        "category": "Pensseli_rasva",
+        "description": "Muhkeat_viikset", 
         "price":"50 €"
     },
     ];
@@ -30,25 +30,21 @@ router.get('/', (req, res) => {
 //hakee tuotteen ID:n mukaan 
 router.get('/:productsId', (req, res) => {
 
-    let foudIndex = -1;
-    for(let i = 0; i < products.length; i++){
-        if(products[i].id == req.params.productsId) {
-            foudIndex = i;
-            break;
-        }
-    }
-
-    if(foudIndex === -1) {
+    let foundIndex = products.findIndex(p => p.id === req.params.productsId || p.name === req.params.productsId || p.manufacturer === req.params.productsId || p.category === req.params.productsId);
+    if(foundIndex === -1) {
         res.sendStatus(404);
+        return;
     } else {
-        res.json(products[foudIndex]);
+        res.json(products[foundIndex]);
     }
-});
+})
+
+  
 
 //Poistaa tuotteen ID:n mukaan
 router.delete('/:productsId', (req, res) => {
  
-   let foudIndex = products.findIndex(p => p.id === req.params.productsId);
+   let foudIndex = products.findIndex(p => p.id === req.params.productsId );
 
    if(foudIndex === -1) {
        res.sendStatus(404);
