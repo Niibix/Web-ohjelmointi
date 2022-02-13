@@ -7,6 +7,7 @@ const port = 3000
 
 const products = require('./routes/products');
 const users = require('./routes/users');
+const invoices = require('./routes/invoices')
 
 //bodyParser aktivoidaan käyttöön alla
 app.use(bodyParser.json());
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 
 app.use('/products', products)
 app.use('/users', users)
+app.use('/invoices', invoices)
 
 //Tämä tulostuu konsoliin kun sovellus lyödään käyntiin
 app.listen(port, () => {
