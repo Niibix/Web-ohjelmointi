@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
     res.json(products);
 });
 
-//hakee tuotteen ID:n mukaan 
+//hakee tuotteen nimen,valmistajan ja kategorian mukaan 
 router.get('/:productsId', (req, res) => {
 
     let foundIndex = products.findIndex(p => p.id === req.params.productsId || p.name === req.params.productsId || p.manufacturer === req.params.productsId || p.category === req.params.productsId);
@@ -68,7 +68,7 @@ router.post('/', (req, res)=> {
     products.push({ 
         //uuid luo automaattisesti uuden id numeron kun post kutsu ajetaan.
         id:  uuidv4(),
-        name: req.body.products,
+        name: req.body.name,
         manufacturer: req.body.manufacturer,
         category: req.body.category,
         description: req.body.description,
